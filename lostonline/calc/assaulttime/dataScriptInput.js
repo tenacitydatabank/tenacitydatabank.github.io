@@ -1,45 +1,31 @@
 function SinputDisplay() {
 	var SinputdivELM = document.getElementById('Sinputdiv');
-
 	var scrTop = document.body.scrollTop || document.documentElement.scrollTop;
-
 	var scrLeft = document.body.scrollLeft || document.documentElement.scrollLeft;
-
 	var dispWidth = document.documentElement.clientWidth || document.body.clientWidth || window.innerWidth;
-
 	SinputdivELM.style.top = (scrTop + 50) + "px";
-
 	SinputdivELM.style.left = ( (dispWidth / 2) - 150 + scrLeft ) + "px";
-
 	if (SinputdivELM.style.display == "block") {
 		SinputdivELM.style.display = "none";
 	}
 	 else {
 		SinputdivELM.style.display = "block";
-	}
-
+	};
 }
 
 function SinputReadmeDisplay() {
 	var SinputReadmedivELM = document.getElementById('sinputReadme');
-
 	var scrTop = document.body.scrollTop || document.documentElement.scrollTop;
-
 	var scrLeft = document.body.scrollLeft || document.documentElement.scrollLeft;
-
 	var dispWidth = document.documentElement.clientWidth || document.body.clientWidth || window.innerWidth;
-
 	SinputReadmedivELM.style.top = (scrTop + 50) + "px";
-
 	SinputReadmedivELM.style.left = ( (dispWidth / 2) - 150 + scrLeft ) + "px";
-
 	if (SinputReadmedivELM.style.display == "block") {
 		SinputReadmedivELM.style.display = "none";
 	}
 	 else {
 		SinputReadmedivELM.style.display = "block";
-	}
-
+	};
 }
 
 function scriptInput(){
@@ -56,45 +42,45 @@ function scriptInput(){
 		while(dataArray[i].slice(j,j+1)==" "){j++;}
 		result = dataArray[i].slice(j);
 		scriptWrite(itemName, result);
-	}
+	};
 }
 
 function scriptWrite(name, data){
 	var result, sumida, city, past, sewer, nobunaga, hideyosi, ghost, mother, other;
-	sumida = name.indexOf("‹÷“c");
-	result = name.indexOf("–n“c");
-	if(result != -1){sumida=result; result=-1;}
-	city = name.indexOf("ƒVƒeƒB");
-	past = name.indexOf("¶•¨");
-	result = name.indexOf("¶‚à‚Ì");
-	if(result != -1){past=result; result=-1;}
-	result = name.indexOf("‚È‚Ü‚à‚Ì");
-	if(result != -1){past=result; result=-1;}
-	result = name.indexOf("ŠC‘¯");
-	if(result != -1){past=result; result=-1;}
-	result = name.indexOf("‰ß‹");
-	if(result != -1){past=result; result=-1;}
-	sewer = name.indexOf("‰º…");
-	result = name.indexOf("H–");
-	if(result != -1){sewer=result; result=-1;}
-	nobunaga = name.indexOf("M");
-	result = name.indexOf("D“c");
-	if(result != -1){nobunaga=result; result=-1;}
-	hideyosi = name.indexOf("G");
-	result = name.indexOf("‰HÄ");
-	if(result != -1){hideyosi=result; result=-1;}
-	ghost = name.indexOf("—H—ì");
-	mother = name.indexOf("•ê‘D");
-	emerge = name.indexOf("•s’…");
-	other = name.indexOf("‘¼");
-	result = name.indexOf("ƒgƒ‰");
-	if(result != -1){other=result; result=-1;}
-	result = name.indexOf("ƒ}ƒt");
-	if(result != -1){other=result; result=-1;}
-	result = name.indexOf("ƒ{ƒ‹");
-	if(result != -1){other=result; result=-1;}
-	result = name.indexOf("í");
-	if(result != -1){other=result; result=-1;}
+	sumida = name.indexOf("éš…ç”°");
+	result = name.indexOf("å¢¨ç”°");
+	if(result != -1){sumida=result; result=-1;};
+	city = name.indexOf("ã‚·ãƒ†ã‚£");
+	past = name.indexOf("ç”Ÿç‰©");
+	result = name.indexOf("ç”Ÿã‚‚ã®");
+	if(result != -1){past=result; result=-1;};
+	result = name.indexOf("ãªã¾ã‚‚ã®");
+	if(result != -1){past=result; result=-1;};
+	result = name.indexOf("æµ·è³Š");
+	if(result != -1){past=result; result=-1;};
+	result = name.indexOf("éå»");
+	if(result != -1){past=result; result=-1;};
+	sewer = name.indexOf("ä¸‹æ°´");
+	result = name.indexOf("å·¥äº‹");
+	if(result != -1){sewer=result; result=-1;};
+	nobunaga = name.indexOf("ä¿¡");
+	result = name.indexOf("ç¹”ç”°");
+	if(result != -1){nobunaga=result; result=-1;};
+	hideyosi = name.indexOf("ç§€");
+	result = name.indexOf("ç¾½æŸ´");
+	if(result != -1){hideyosi=result; result=-1;};
+	ghost = name.indexOf("å¹½éœŠ");
+	mother = name.indexOf("æ¯èˆ¹");
+	emerge = name.indexOf("ä¸æ™‚ç€");
+	other = name.indexOf("ä»–");
+	result = name.indexOf("ãƒˆãƒ©");
+	if(result != -1){other=result; result=-1;};
+	result = name.indexOf("ãƒãƒ•");
+	if(result != -1){other=result; result=-1;};
+	result = name.indexOf("ãƒœãƒ«");
+	if(result != -1){other=result; result=-1;};
+	result = name.indexOf("ç¨®");
+	if(result != -1){other=result; result=-1;};
 	if(sumida != -1){document.getElementById('sumidasetbasetime').value = dataOptimize(data);}
 	else if(city != -1){document.getElementById('citysetbasetime').value = dataOptimize(data);}
 	else if(past != -1){document.getElementById('pastasasetbasetime').value = dataOptimize(data);}
@@ -104,7 +90,7 @@ function scriptWrite(name, data){
 	else if(ghost != -1){document.getElementById('ghostsetbasetime').value = dataOptimize(data);}
 	else if(mother != -1){document.getElementById('mshipsetbasetime').value = dataOptimize(data);}
 	else if(emerge != -1){document.getElementById('emergesetbasetime').value = dataOptimize(data);}
-	else if(other != -1){document.getElementById('otherasasetbasetime').value = dataOptimize(data);}
+	else if(other != -1){document.getElementById('otherasasetbasetime').value = dataOptimize(data);};
 }
 
 function dataOptimize(data){
@@ -116,7 +102,7 @@ function dataOptimize(data){
 		thisYear = parseInt(today.getFullYear());
 		if(dataArray[0] == "12/25" || dataArray[0] == "12/26" || dataArray[0] == "12/27" || dataArray[0] == "12/28" || dataArray[0] == "12/29" || dataArray[0] == "12/30" || dataArray[0] == "12/31" ){
 			if(parseInt(today.getMonth()) == 0){thisYear--;}
-		}
+		};
 		dataArray[0] = thisYear + "/" + dataArray[0];
 	}
 	else{
@@ -126,13 +112,13 @@ function dataOptimize(data){
 		if(dataArray[0] == 25 || dataArray[0] == 26 || dataArray[0] == 27 || dataArray[0] == 28 || dataArray[0] == 29 || dataArray[0] == 30 || dataArray[0] == 31 ){
 			if(parseInt(today.getDate()) == 1 || parseInt(today.getDate()) == 2 || parseInt(today.getDate()) == 3 || parseInt(today.getDate()) == 4 || parseInt(today.getDate()) == 5 || parseInt(today.getDate()) == 6 || parseInt(today.getDate()) == 7){
 				if(parseInt(today.getMonth()) == 0){thisYear--; thisMonth = 11;}
-				else{thisMonth--;}
+				else{thisMonth--;};
 			}
 		}
-		else{void(0);}
+		else{void(0);};
 		thisMonth++;
 		dataArray[0] = thisYear + "/" + thisMonth + "/" + dataArray[0];
-	}
+	};
 	if(dataArray[1]){
 		timeArray = dataArray[1].split(":");
 		if(timeArray[2]){void(0);}
@@ -141,9 +127,9 @@ function dataOptimize(data){
 		}
 		else{
 			dataArray[1] = "0:" + dataArray[1] + ":0";
-		}
+		};
 		result = dataArray[0] + " " + dataArray[1];
 	}
-	else{result = dataArray[0] + " 00:00:00";}
+	else{result = dataArray[0] + " 00:00:00";};
 	return result;
 }
