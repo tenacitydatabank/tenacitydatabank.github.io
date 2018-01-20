@@ -5,16 +5,16 @@ function assaulttimeStart(baseELM,plustime,assault){
 	var basetimeTorF = assaultbasetimeTrueorFalse(basetime);
 	var commandTorF;
 	if(basetimeTorF != "true") {
-		alert('Šî€ƒf[ƒ^‚ª–³Œø‚Å‚·B')
+		alert('åŸºæº–ãƒ‡ãƒ¼ã‚¿ãŒç„¡åŠ¹ã§ã™ã€‚')
 		return false;
-	}
+	};
 	commandTorF = assaulttrueorfalse(tagstarttime,tagendtime);
 	if(commandTorF == "true") {
 	      assaulttimemain(assault,basetime,plustime,tagstarttime,tagendtime);
 	}
 	else {
-	      alert('ŽZo”ÍˆÍ‚ª–³Œø‚Å‚·BŽZo”ÍˆÍ‚Í“ú•t‚ª‚P“úˆá‚¢ˆÈ“à‚Å‚È‚¯‚ê‚Î‚È‚è‚Ü‚¹‚ñB');
-	}
+	      alert('ç®—å‡ºç¯„å›²ãŒç„¡åŠ¹ã§ã™ã€‚ç®—å‡ºç¯„å›²ã¯æ—¥ä»˜ãŒï¼‘æ—¥é•ã„ä»¥å†…ã§ãªã‘ã‚Œã°ãªã‚Šã¾ã›ã‚“ã€‚');
+	};
 }
 
 function assaultbasetimeTrueorFalse(basetime) {
@@ -33,7 +33,7 @@ function assaultbasetimeTrueorFalse(basetime) {
 		}
 		else {
 			resultA = "false";
-		}
+		};
 	}
 	
 	else if(dayOfWeek == 5){
@@ -46,7 +46,7 @@ function assaultbasetimeTrueorFalse(basetime) {
 		}
 		else {
 			resultA = "false";
-		}
+		};
 	}
 	else if(dayOfWeek == 6){
 		var nowdate = new Date();
@@ -58,7 +58,7 @@ function assaultbasetimeTrueorFalse(basetime) {
 		}
 		else {
 			resultA = "false";
-		}
+		};
 	}
 	else if(dayOfWeek == 0){
 		var nowdate = new Date();
@@ -70,7 +70,7 @@ function assaultbasetimeTrueorFalse(basetime) {
 		}
 		else {
 			resultA = "false";
-		}
+		};
 	}
 	else if(dayOfWeek == 1){
 		var nowdate = new Date();
@@ -82,7 +82,7 @@ function assaultbasetimeTrueorFalse(basetime) {
 		}
 		else {
 			resultA = "false";
-		}
+		};
 	}
 	else if(dayOfWeek == 2){
 		var nowdate = new Date();
@@ -94,7 +94,7 @@ function assaultbasetimeTrueorFalse(basetime) {
 		}
 		else {
 			resultA = "false";
-		}
+		};
 	}
 	else {
 		var nowdate = new Date();
@@ -106,8 +106,8 @@ function assaultbasetimeTrueorFalse(basetime) {
 		}
 		else {
 			resultA = "false";
-		}
-	}
+		};
+	};
 	
 	return resultA;
 }
@@ -127,7 +127,7 @@ function assaulttrueorfalse(tagstart,tagend) {
 		}
 		else {
 			TorFresult = "false";
-		}
+		};
 	}
 	
 	else {
@@ -140,12 +140,12 @@ function assaulttrueorfalse(tagstart,tagend) {
 			}
 			else {
 				TorFresult = "false";
-			}
+			};
 		}
 		else {
 			TorFresult = "false";
-		}
-	}
+		};
+	};
 	
 	return TorFresult;
 }
@@ -167,7 +167,7 @@ function assaulttimemain(assault,basetime,plustime,tagstarttime,tagendtime) {
 		obj.id = assault + "displaytabletr3";
 		obj.align = "center";
 		document.getElementById(assault + 'displaytbody').appendChild(obj);
-	}
+	};
 	
 	target = document.getElementById(assault + 'displaytabletr3td1');
 	if(target){
@@ -180,7 +180,7 @@ function assaulttimemain(assault,basetime,plustime,tagstarttime,tagendtime) {
 		obj1.align = "center";
 		obj1.innerHTML = forDisplay.getFullYear() + "/" + (forDisplay.getMonth() + 1) + "/" + forDisplay.getDate() + "&nbsp;" + forDisplay.getHours() + ":" + forDisplay.getMinutes() + ":" + forDisplay.getSeconds();
 		document.getElementById(assault + 'displaytabletr3').appendChild(obj1);
-	}
+	};
 	
 	
 	assaulttimemaincheck(assault,PrintTime,plustime,tagendtime);
@@ -228,7 +228,7 @@ function assaulttimemaincheck(assault,PrintTime,plustime,tagendtime) {
 				obj.id = assault + "displaytabletr" + String(x);
 				obj.align = "center";
 				document.getElementById(assault + 'displaytbody').appendChild(obj);
-			}
+			};
 			target = assault + "displaytabletr"+ String(x) +"td1";
 			if(document.getElementById(target)) {
 				document.getElementById(target).innerHTML = forDisplay.getFullYear() + "/" + (forDisplay.getMonth() + 1) + "/" + forDisplay.getDate() + "&nbsp;" + forDisplay.getHours() + ":" + forDisplay.getMinutes() + ":" +forDisplay.getSeconds();
@@ -243,9 +243,9 @@ function assaulttimemaincheck(assault,PrintTime,plustime,tagendtime) {
 				target = assault + "displaytabletr" + String(x);
 				document.getElementById(target).appendChild(obj1);
 				x++;
-			}
-		}
-	}
+			};
+		};
+	};
 	
 	var A9 = "continue"
 	while(A9 == "continue"){
@@ -257,8 +257,8 @@ function assaulttimemaincheck(assault,PrintTime,plustime,tagendtime) {
 		}
 		else {
 			break;
-		}
-	}
+		};
+	};
 	
 	return;
 }
@@ -280,7 +280,7 @@ function getPrintStartTime(basetime,plustime,tagstarttime) {
 		var basedata = getPrintStartTimeGetBasedataToday(basetime,plustime,tagstarttime);
 		basetime = basedata;
 		basedata = getPrintStartTimeGetBasedataZero(basetime,plustime,tagstarttime);
-	}
+	};
 	
 	var TagStartTimeDateA = new Date();
 	TagStartTimeDateA.setTime(tagstarttime);
@@ -295,7 +295,7 @@ function getPrintStartTime(basetime,plustime,tagstarttime) {
 	else {
 		var tempdata = parseFloat(basedata) + parseFloat(plustime);
 		var result = getPrintStartTimeCheck(tempdata,plustime,tagstarttime);
-	}
+	};
 	
 	return result;
 }
@@ -304,7 +304,7 @@ function getPrintStartTimeCheck(tempdata,plustime,tagstarttime) {
 	while (parseFloat(tagstarttime) > tempdata) {
 		tempdataB = getPrintStartTimeCheckPlugin(tempdata,plustime);
 		tempdata = tempdataB;
-	}
+	};
 	return tempdata;
 }
 
@@ -349,7 +349,7 @@ function getPrintStartTimeGetBasedataZeroCheck(tempdata,plustime) {
 		TimeDifAminutes = TimeDifAforcalc.getMinutes();
 		TimeDifAseconds = TimeDifAforcalc.getSeconds();
 		n = (parseFloat(TimeDifAhours) * 3600) + (parseFloat(TimeDifAminutes) * 60) + parseFloat(TimeDifAseconds);
-	}
+	};
 	return tempdata;
 }
 
@@ -382,7 +382,7 @@ function getPrintStartTimeGetBasedataTodayCheck(tempdata,plustime,tagstarttime) 
 		tempdataDate.setTime(tempdata);
 		tempdataDateA = tempdataDate.getDate();
 		DateDifA = parseFloat(TagStartDateA) - parseFloat(tempdataDateA);
-	}
+	};
 	return tempdata;
 }
 
