@@ -1,40 +1,40 @@
 function resultdisplay(assault,formELM) {
 	var assaultName;
 		if(assault=="sumida"){
-			assaultName = "‹÷“cŒö‰€";
+			assaultName = "éš…ç”°å…¬åœ’";
 		}
 		else if(assault=="city"){
-			assaultName = "ƒVƒeƒBƒ^ƒ[";
+			assaultName = "ã‚·ãƒ†ã‚£ã‚¿ãƒ¯ãƒ¼";
 		}
 		else if(assault=="pastasa"){
-			assaultName = "‰ß‹”N‘ã";
+			assaultName = "éå»å¹´ä»£";
 		}
 		else if(assault=="sewer"){
-			assaultName = "H–Œ»ê ‰º…“¹";
+			assaultName = "å·¥äº‹ç¾å ´ ä¸‹æ°´é“";
 		}
 		else if(assault=="nobunaga"){
-			assaultName = "D“cM’·";
+			assaultName = "ç¹”ç”°ä¿¡é•·";
 		}
 		else if(assault=="hideyosi"){
-			assaultName = "‰HÄG‹g";
+			assaultName = "ç¾½æŸ´ç§€å‰";
 		}
 		else if(assault=="ghost"){
-			assaultName = "—H—ì‘D";
+			assaultName = "å¹½éœŠèˆ¹";
 		}
 		else if(assault=="mship"){
-			assaultName = "ƒpƒ‰ƒTƒCƒg•ê‘D";
+			assaultName = "ãƒ‘ãƒ©ã‚µã‚¤ãƒˆæ¯èˆ¹";
 		}
 		else if(assault=="emerge"){
-			assaultName = "•s’…";
+			assaultName = "ä¸æ™‚ç€";
 		}
 		else{
-			assaultName = "‚»‚Ì‘¼";
-		}
+			assaultName = "ãã®ä»–";
+		};
 	
 	if(formELM.checked){
 		var titleELM = document.createElement('H2');
 		titleELM.id = assault + "displaytitle";
-		titleELM.innerHTML = assaultName + "ƒAƒTƒ‹ƒg";
+		titleELM.innerHTML = assaultName + "ã‚¢ã‚µãƒ«ãƒˆ";
 		document.getElementById(assault + 'mainDiv').appendChild(titleELM);
 		var tableELM = document.createElement('table');
 		tableELM.id = assault + "displaytable";
@@ -51,7 +51,7 @@ function resultdisplay(assault,formELM) {
 		var tr1td1ELM = document.createElement('td');
 		tr1td1ELM.id = assault + "displaytabletr1td1";
 		tr1td1ELM.align = "center";
-		tr1td1ELM.innerHTML = assaultName + "Œ‹‰Ê";
+		tr1td1ELM.innerHTML = assaultName + "çµæœ";
 		document.getElementById(assault + 'displaytabletr1').appendChild(tr1td1ELM);
 		var tr2ELM = document.createElement('tr');
 		tr2ELM.id = assault + "displaytabletr2";
@@ -60,11 +60,11 @@ function resultdisplay(assault,formELM) {
 		var tr2td1ELM = document.createElement('td');
 		tr2td1ELM.id = assault + "displaytabletr2td1";
 		tr2td1ELM.align = "center";
-		tr2td1ELM.innerHTML = "ˆ—–¢Às";
+		tr2td1ELM.innerHTML = "å‡¦ç†æœªå®Ÿè¡Œ";
 		document.getElementById(assault + 'displaytabletr2').appendChild(tr2td1ELM);
 	}
 	else{
 		document.getElementById(assault + 'mainDiv').removeChild(document.getElementById(assault + 'displaytitle'));
 		document.getElementById(assault + 'mainDiv').removeChild(document.getElementById(assault + 'displaytable'));
-	}
+	};
 }
